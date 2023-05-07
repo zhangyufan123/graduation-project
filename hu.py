@@ -33,6 +33,7 @@ def dif_hu(f1, f2):
 
 
 if __name__ == '__main__':
+    # Flip invariance and combination figure
     t1 = datetime.now()
     fp = 'test/mn/mn1.png'
     img = cv2.imread(fp)

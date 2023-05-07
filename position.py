@@ -387,17 +387,7 @@ def adjust_pts_order(pts_2ds):
 # print(math.sin(math.pi*a/180))
 if __name__ == '__main__':
 
-    x1 = [0,5,5,14,14,21]
-    a1 = [16,16,12,12,4,4]
-    x2 = [0,4,4,10,10,21]
-    a2 = [13,13,9,9,2,2]
-    '''
-    x1 = [0, 2, 2, 5, 5, 9]
-    a1 = [5, 5, 3, 3, 0, 0]
-    x2 = [0, 4, 4, 6, 6, 9]
-    a2 = [4, 4, 1, 1, -1, -1]
-    '''
-    # print(cal_dif(x1,a1,x2,a2))
+    # Rotation invariance
 
     # sf = shapefile.Reader('test/t1/EDU/EDU1/DEU_adm3.shp')
     sf = shapefile.Reader('test/polygon/36.shp')

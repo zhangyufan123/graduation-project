@@ -62,26 +62,6 @@ def draw_turning(p):
 
     angle = angle / np.pi
     sum = 0
-    '''
-    for i in angle:
-        sum += i
-    angle = angle / sum
-    '''
-    '''
-    plt.xlabel('angle')
-    plt.xlabel('length')
-    plt.plot(xvalue, angle, ls="-", lw=2, label="Turning function")
-    #print(xvalue)
-    #print(angle)
-    #print(xvalue,angle)
-    plt.legend()
-    plt.show()
-    '''
-    #return np.trapz(angle, xvalue, dx=0.0001)
-    #print(angle)
+
     return xvalue, angle
 
-#print(np.zeros(5))
-#p = [[1,1],[1,3],[2,3],[2,1],[1,1]]
-#r = draw_turning(p)
-#print(r)

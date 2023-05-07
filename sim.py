@@ -119,6 +119,8 @@ def cal_sim(vertex1, vertex2):
         dif = dif + res
     return 1 - np.sqrt(dif)
 
+
+# Scale invariance
 def scale_dif(vertex1, vertex2):
     c1x, c1y = centerpoint(vertex1)
     c2x, c2y = centerpoint(vertex2)
@@ -131,12 +133,12 @@ def scale_dif(vertex1, vertex2):
         v2x, v2y = v2
         dis2 += np.sqrt((v2x - c2x)**2 + (v2y - c2y)**2)
     sim = min(dis1/len(vertex1), dis2/len(vertex2)) / max(dis1/len(vertex1), dis2/len(vertex2))
-    #print(dis1/len(vertex1), dis2/len(vertex2))
+
     return sim
 
 
 if __name__ == '__main__':
-
+    # polygon similarity and simplify polygon
     time_start = time.time()
 
     # sf = shapefile.Reader('test/t1/EDU/EDU1/DEU_adm3.shp')
